@@ -12,6 +12,8 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ul, li {
@@ -46,6 +48,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 #footer {
@@ -71,6 +76,7 @@ nav {
 
 nav h1 {
   margin: auto;
+	padding: 30px 25px;
 }
 
 nav h1 a {
@@ -119,6 +125,10 @@ nav h1 a {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+}
+
+.map-aria-description {
+	display: none;
 }
 
 /* ====================== Restaurant Filtering ====================== */
@@ -171,11 +181,28 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 0px 25px;
   text-align: left;
-	max-width: 470px;
-  width: 80%;
+  width: 270px;
+	min-width: 270px;
+	max-width: 300px;
 }
+
+@media only screen and (min-width: 0px) {
+  #restaurants-list li {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #restaurants-list li {
+    max-width: 45%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #restaurants-list li {
+    max-width: 300px;
+  }
 
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -262,6 +289,7 @@ nav h1 a {
 
 #restaurant-address {
   font-size: 12pt;
+	font-weight: 600;
   margin: 10px 0px;
 }
 
