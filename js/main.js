@@ -171,7 +171,7 @@ createRestaurantHTML = (restaurant) => {
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
-  neighbourhood.tabIndex = 0;
+  neighborhood.tabIndex = 0;
   li.append(neighborhood);
 
   const address = document.createElement('p');
@@ -212,15 +212,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
-/*Service worker registration*/
-if ('serviceWorker' in navigator) {
-	  navigator.serviceWorker
-    .register('./sw.js')
-	  .then(function() {
-		    console.log('Registration worked!');
-	  })
-	  .catch(function(err) {
-		    console.error(err);
-	});
-}
