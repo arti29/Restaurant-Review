@@ -1,13 +1,13 @@
-### Restaurant Review App
+## Restaurant Review App
 
-## Table of Contents
+### Table of Contents
 
 * [Overview](#overview)
 * [Specification](#specification)
 * [How to run the project](#howtoruntheproject)
 * [Contributing](#contributing)
 
-## Overview:
+### Overview:
 
 For the **Restaurant Reviews** projects, I incrementally converted a static webpage to a mobile-ready web application. I took a static design that lacks accessibility and converted the design to be responsive on different sized displays and accessible for screen reader use. I also added a service worker to begin the process of creating a seamless offline experience for users.
 
@@ -26,7 +26,7 @@ I was provided with the code for a restaurant reviews website. The code has a lo
 3. With your server running, visit the site: `http://localhost:8000`, this will load the application.
 
 
-## Contributing
+### Contributing
 
 * Starter code by Udacity.
 * Leafletjs, an open-source JavaScript library for mobile-friendly interactive maps.
