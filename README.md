@@ -4,7 +4,7 @@
 
 * [Overview](#overview)
 * [Specification](#specification)
-* [How to run the project](#how to run the project)
+* [How to run the project](#howtoruntheproject)
 * [Contributing](#contributing)
 
 ## Overview:
@@ -32,5 +32,5 @@ I was provided with the code for a restaurant reviews website. The code has a lo
 * Leafletjs, an open-source JavaScript library for mobile-friendly interactive maps.
 * Mapbox, an open source mapping platform for custom designed maps.
 * Youtube presentations and some other online references.
-* [Font]: https://fonts.googleapis.com/css?family=Coda
-* [Font Awesome]: https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+* Font: https://fonts.googleapis.com/css?family=Coda
+* Font Awesome: https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
