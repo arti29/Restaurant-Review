@@ -4,10 +4,10 @@ let cacheFiles = [
   './index.html',
   './restaurant.html',
   './css/styles.css',
+  './js/dbhelper.js',
   './js/main.js',
   './js/restaurant_info.js',
-  './js/dbhelper.js',
-  './js/indexController.js',
+  './js/sw_registration.js',
   './data/restaurants.json',
   './img/1.jpg',
   './img/2.jpg',
@@ -23,28 +23,24 @@ let cacheFiles = [
 
 /*Installing the service worker*/
 
-self.addEventListener('install', function (event) {
+self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(staticCacheName).then(function (cache) {
-            console.log(cache);
             return cache.addAll(cacheFiles);
-
-        }).catch(error => {
-            console.log(error);
         })
     );
 });
 
 /*Activating the service worker*/
 
-self.addEventListener('activate', function (event) {
+self.addEventListener('activate', function(event) {
     event.waitUntil(
         caches.keys().then(function (cacheNames) {
             return Promise.all(
-                cacheNames.filter(function (cacheName) {
+                cacheNames.filter(function(cacheName) {
                     return cacheName.startsWith('restaurant-') &&
                         cacheName != staticCacheName;
-                }).map(function (cacheName) {
+                }).map(function(cacheName) {
                     return caches.delete(cacheName);
                 })
             );
